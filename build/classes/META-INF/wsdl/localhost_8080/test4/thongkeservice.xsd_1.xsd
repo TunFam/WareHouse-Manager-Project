@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws/">
+
+<xs:element name="getListByDTDonHang" type="tns:getListByDTDonHang"/>
+
+<xs:element name="getListByDTDonHangResponse" type="tns:getListByDTDonHangResponse"/>
+
+<xs:element name="getListByDTSanPham" type="tns:getListByDTSanPham"/>
+
+<xs:element name="getListByDTSanPhamResponse" type="tns:getListByDTSanPhamResponse"/>
+
+<xs:element name="getListByDonHang" type="tns:getListByDonHang"/>
+
+<xs:element name="getListByDonHangResponse" type="tns:getListByDonHangResponse"/>
+
+<xs:element name="getListByKhachHang" type="tns:getListByKhachHang"/>
+
+<xs:element name="getListByKhachHangResponse" type="tns:getListByKhachHangResponse"/>
+
+<xs:element name="getListBySLDonHang" type="tns:getListBySLDonHang"/>
+
+<xs:element name="getListBySLDonHangResponse" type="tns:getListBySLDonHangResponse"/>
+
+<xs:element name="getListBySanPham" type="tns:getListBySanPham"/>
+
+<xs:element name="getListBySanPhamResponse" type="tns:getListBySanPhamResponse"/>
+
+<xs:element name="sumListByKhachHang" type="tns:sumListByKhachHang"/>
+
+<xs:element name="sumListByKhachHang1" type="tns:sumListByKhachHang1"/>
+
+<xs:element name="sumListByKhachHang1Response" type="tns:sumListByKhachHang1Response"/>
+
+<xs:element name="sumListByKhachHangResponse" type="tns:sumListByKhachHangResponse"/>
+
+<xs:complexType name="getListByDTDonHang">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getListByDTDonHangResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:donhang" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="donhang">
+<xs:sequence>
+<xs:element name="dtn" type="xs:double"/>
+<xs:element name="dtsp" type="xs:double"/>
+<xs:element name="gia" type="xs:double"/>
+<xs:element name="hinhanh" type="xs:string" minOccurs="0"/>
+<xs:element name="ma_sp" type="xs:string" minOccurs="0"/>
+<xs:element name="madon" type="xs:string" minOccurs="0"/>
+<xs:element name="sldh" type="xs:int"/>
+<xs:element name="soluong" type="xs:int"/>
+<xs:element name="tenkhachhang" type="xs:string" minOccurs="0"/>
+<xs:element name="tensanpham" type="xs:string" minOccurs="0"/>
+<xs:element name="time" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="tongDH" type="xs:int"/>
+<xs:element name="tongtien" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getListByDTSanPham">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getListByDTSanPhamResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:sanpham" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sanpham">
+<xs:sequence>
+<xs:element name="anh" type="xs:string" minOccurs="0"/>
+<xs:element name="doanhthu" type="xs:double"/>
+<xs:element name="gia" type="xs:double"/>
+<xs:element name="loaihang" type="xs:string" minOccurs="0"/>
+<xs:element name="masp" type="xs:string" minOccurs="0"/>
+<xs:element name="mota" type="xs:string" minOccurs="0"/>
+<xs:element name="ngaynhap" type="xs:string" minOccurs="0"/>
+<xs:element name="soluong" type="xs:int"/>
+<xs:element name="tensp" type="xs:string" minOccurs="0"/>
+<xs:element name="tinhtrang" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getListBySLDonHang">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getListBySLDonHangResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:donhang" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sumListByKhachHang">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="sumListByKhachHangResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:khachhangmodel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="khachhangmodel">
+<xs:sequence>
+<xs:element name="convertDate" type="xs:string" minOccurs="0"/>
+<xs:element name="diachiKH" type="xs:string" minOccurs="0"/>
+<xs:element name="dienthoai" type="xs:string" minOccurs="0"/>
+<xs:element name="makhachhang" type="xs:string" minOccurs="0"/>
+<xs:element name="ngaysinh" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="ngaythem" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="sumKH" type="xs:int"/>
+<xs:element name="tenkhachhang" type="xs:string" minOccurs="0"/>
+<xs:element name="tuoi" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getListByDonHang">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getListByDonHangResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:donhang" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getListBySanPham">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getListBySanPhamResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:sanpham" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getListByKhachHang">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getListByKhachHangResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:khachhangmodel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sumListByKhachHang1">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="sumListByKhachHang1Response">
+<xs:sequence>
+<xs:element name="return" type="tns:khachhangmodel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws/">
+
+<xs:element name="Find_sanpham" type="tns:Find_sanpham"/>
+
+<xs:element name="Find_sanphamResponse" type="tns:Find_sanphamResponse"/>
+
+<xs:element name="delete_sanpham" type="tns:delete_sanpham"/>
+
+<xs:element name="getAll_danhmuc" type="tns:getAll_danhmuc"/>
+
+<xs:element name="getAll_danhmucResponse" type="tns:getAll_danhmucResponse"/>
+
+<xs:element name="getAll_sanpham" type="tns:getAll_sanpham"/>
+
+<xs:element name="getAll_sanphamResponse" type="tns:getAll_sanphamResponse"/>
+
+<xs:element name="loc" type="tns:loc"/>
+
+<xs:element name="locResponse" type="tns:locResponse"/>
+
+<xs:element name="save_sanpham" type="tns:save_sanpham"/>
+
+<xs:element name="update_sanpham" type="tns:update_sanpham"/>
+
+<xs:complexType name="getAll_sanpham">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAll_sanphamResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:sanpham" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sanpham">
+<xs:sequence>
+<xs:element name="anh" type="xs:string" minOccurs="0"/>
+<xs:element name="doanhthu" type="xs:double"/>
+<xs:element name="gia" type="xs:double"/>
+<xs:element name="loaihang" type="xs:string" minOccurs="0"/>
+<xs:element name="masp" type="xs:string" minOccurs="0"/>
+<xs:element name="mota" type="xs:string" minOccurs="0"/>
+<xs:element name="ngaynhap" type="xs:string" minOccurs="0"/>
+<xs:element name="soluong" type="xs:int"/>
+<xs:element name="tensp" type="xs:string" minOccurs="0"/>
+<xs:element name="tinhtrang" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAll_danhmuc">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAll_danhmucResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:danhmuc" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="danhmuc">
+<xs:sequence>
+<xs:element name="madanhmuc" type="xs:string" minOccurs="0"/>
+<xs:element name="tendanhmuc" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="delete_sanpham">
+<xs:sequence>
+<xs:element name="a" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="update_sanpham">
+<xs:sequence>
+<xs:element name="a" type="xs:string" minOccurs="0"/>
+<xs:element name="b" type="xs:string" minOccurs="0"/>
+<xs:element name="c" type="xs:string" minOccurs="0"/>
+<xs:element name="d" type="xs:string" minOccurs="0"/>
+<xs:element name="e" type="xs:double"/>
+<xs:element name="f" type="xs:string" minOccurs="0"/>
+<xs:element name="g" type="xs:int"/>
+<xs:element name="h" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="save_sanpham">
+<xs:sequence>
+<xs:element name="a" type="xs:string" minOccurs="0"/>
+<xs:element name="b" type="xs:string" minOccurs="0"/>
+<xs:element name="c" type="xs:string" minOccurs="0"/>
+<xs:element name="d" type="xs:string" minOccurs="0"/>
+<xs:element name="e" type="xs:double"/>
+<xs:element name="f" type="xs:string" minOccurs="0"/>
+<xs:element name="g" type="xs:int"/>
+<xs:element name="h" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Find_sanpham">
+<xs:sequence>
+<xs:element name="a" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Find_sanphamResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:sanpham" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loc">
+<xs:sequence>
+<xs:element name="a" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="locResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:sanpham" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

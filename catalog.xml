@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/test4/sanphamWebService?wsdl" uri="xml-resources/web-service-references/sanphamWebService/wsdl/localhost_8080/test4/sanphamWebService.wsdl"/>
+    <system systemId="http://localhost:8080/test4/khachhangservice?wsdl" uri="xml-resources/web-service-references/khachhangservice/wsdl/localhost_8080/test4/khachhangservice.wsdl"/>
+    <system systemId="http://localhost:8080/test4/donhangservice?wsdl" uri="xml-resources/web-service-references/donhangservice/wsdl/localhost_8080/test4/donhangservice.wsdl"/>
+    <system systemId="http://localhost:8080/test4/sanphamWebService?WSDL" uri="xml-resources/web-service-references/sanphamWebService/wsdl/localhost_8080/test4/sanphamWebService.wsdl"/>
+    <system systemId="http://localhost:8080/test4/sanphamWebService?xsd=1" uri="xml-resources/web-service-references/sanphamWebService/wsdl/localhost_8080/test4/sanphamWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/test4/nhanvienService?WSDL" uri="xml-resources/web-service-references/nhanvienService/wsdl/localhost_8080/test4/nhanvienService.wsdl"/>
+    <system systemId="http://localhost:8080/test4/nhanvienService?xsd=1" uri="xml-resources/web-service-references/nhanvienService/wsdl/localhost_8080/test4/nhanvienService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/test4/khachhangservice?WSDL" uri="xml-resources/web-service-references/khachhangservice/wsdl/localhost_8080/test4/khachhangservice.wsdl"/>
+    <system systemId="http://localhost:8080/test4/khachhangservice?xsd=1" uri="xml-resources/web-service-references/khachhangservice/wsdl/localhost_8080/test4/khachhangservice.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/test4/tongquanservice?WSDL" uri="xml-resources/web-service-references/tongquanservice/wsdl/localhost_8080/test4/tongquanservice.wsdl"/>
+    <system systemId="http://localhost:8080/test4/tongquanservice?xsd=1" uri="xml-resources/web-service-references/tongquanservice/wsdl/localhost_8080/test4/tongquanservice.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/test4/thongkeservice?WSDL" uri="xml-resources/web-service-references/thongkeservice/wsdl/localhost_8080/test4/thongkeservice.wsdl"/>
+    <system systemId="http://localhost:8080/test4/thongkeservice?xsd=1" uri="xml-resources/web-service-references/thongkeservice/wsdl/localhost_8080/test4/thongkeservice.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/test4/donhangservice?WSDL" uri="xml-resources/web-service-references/donhangservice/wsdl/localhost_8080/test4/donhangservice.wsdl"/>
+    <system systemId="http://localhost:8080/test4/donhangservice?xsd=1" uri="xml-resources/web-service-references/donhangservice/wsdl/localhost_8080/test4/donhangservice.xsd_1.xsd"/>
+</catalog>

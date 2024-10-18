@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-sanphamWebService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/sanphamWebService"/>
+        <property name="wsdl-sanphamWebService" location="xml-resources/web-service-references/sanphamWebService/wsdl/localhost_8080/test4/sanphamWebService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/sanphamWebService" destdir="${build.generated.dir}/jax-wsCache/sanphamWebService" wsdl="${wsdl-sanphamWebService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/test4/sanphamWebService?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-sanphamWebService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/sanphamWebService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/sanphamWebService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-sanphamWebService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/sanphamWebService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ws"/>
+    </target>
+    <target name="wsimport-client-nhanvienService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/nhanvienService"/>
+        <property name="wsdl-nhanvienService" location="xml-resources/web-service-references/nhanvienService/wsdl/localhost_8080/test4/nhanvienService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/nhanvienService" destdir="${build.generated.dir}/jax-wsCache/nhanvienService" wsdl="${wsdl-nhanvienService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/test4/nhanvienService?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-nhanvienService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/nhanvienService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/nhanvienService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-nhanvienService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/nhanvienService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ws"/>
+    </target>
+    <target name="wsimport-client-donhangservice" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/donhangservice"/>
+        <property name="wsdl-donhangservice" location="xml-resources/web-service-references/donhangservice/wsdl/localhost_8080/test4/donhangservice.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/donhangservice" destdir="${build.generated.dir}/jax-wsCache/donhangservice" wsdl="${wsdl-donhangservice}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/test4/donhangservice?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-donhangservice}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/donhangservice"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/donhangservice">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-donhangservice" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/donhangservice"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ws"/>
+    </target>
+    <target name="wsimport-client-khachhangservice" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/khachhangservice"/>
+        <property name="wsdl-khachhangservice" location="xml-resources/web-service-references/khachhangservice/wsdl/localhost_8080/test4/khachhangservice.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/khachhangservice" destdir="${build.generated.dir}/jax-wsCache/khachhangservice" wsdl="${wsdl-khachhangservice}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/test4/khachhangservice?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-khachhangservice}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/khachhangservice"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/khachhangservice">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-khachhangservice" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/khachhangservice"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ws"/>
+    </target>
+    <target name="wsimport-client-tongquanservice" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/tongquanservice"/>
+        <property name="wsdl-tongquanservice" location="xml-resources/web-service-references/tongquanservice/wsdl/localhost_8080/test4/tongquanservice.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/tongquanservice" destdir="${build.generated.dir}/jax-wsCache/tongquanservice" wsdl="${wsdl-tongquanservice}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/test4/tongquanservice?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-tongquanservice}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/tongquanservice"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/tongquanservice">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-tongquanservice" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/tongquanservice"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ws"/>
+    </target>
+    <target name="wsimport-client-thongkeservice" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/thongkeservice"/>
+        <property name="wsdl-thongkeservice" location="xml-resources/web-service-references/thongkeservice/wsdl/localhost_8080/test4/thongkeservice.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/thongkeservice" destdir="${build.generated.dir}/jax-wsCache/thongkeservice" wsdl="${wsdl-thongkeservice}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/test4/thongkeservice?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-thongkeservice}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/thongkeservice"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/thongkeservice">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-thongkeservice" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/thongkeservice"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ws"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-sanphamWebService, wsimport-client-nhanvienService, wsimport-client-donhangservice, wsimport-client-khachhangservice, wsimport-client-tongquanservice, wsimport-client-thongkeservice"/>
+</project>
